@@ -1,0 +1,341 @@
+body{
+    background-color: white;
+    margin: 0;
+    font-family: sans-serif;
+}
+aside{
+    color: white;
+    padding: 1em;
+}
+nav{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+nav > ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background-color: black;
+}
+nav li a{
+    text-decoration:  none;
+    color: white;
+    padding: 1em;
+    display: block;
+    letter-spacing: 2px;
+}
+
+nav li a:hover{
+    background-color: rgb(106, 102, 102);
+    color: rgb(244, 239, 239);
+    transition-duration: .6s;
+}
+@media screen and (max-width: 1000px) {
+   nav > ul{
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 600px){
+    nav, nav > ul {
+        flex-flow: column;
+        text-align: center;
+    }
+    nav li a{
+        border-bottom: 1px solid white;
+    }
+    aside{
+        display: none;
+    }
+}
+
+#users-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #users-table td, #users-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #users-table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #users-table tr:hover {background-color: #ddd;}
+  
+  #users-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+
+.game {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.game-list {
+    width: 80%;
+    
+    padding: 50px;
+}
+
+.teams {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.home{
+    flex: 1;
+    position: relative;
+    right: 0;
+    
+}
+.away{
+    flex: 1;
+    position: relative;
+    left: 40%
+}
+.haw{
+    display: flex;
+}
+
+.team-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.vs {
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: #888;
+}
+
+.details {
+    font-size: 1em;
+    color: #2f2d2d;
+    margin-bottom: 10px;
+}
+.score{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: bold;
+    color: #151414;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #333;
+}
+
+.commentary {
+    margin-top: 10px;
+}
+
+.commentary .label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* form Style*/
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.c-form form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.c-form label {
+    font-weight: bold;
+}
+
+.c-form input[type="file"],
+.c-form input[type="text"],
+.c-form input[type="password"],
+.c-form input[type="date"],
+.c-form select,
+.c-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.c-form textarea {
+    resize: vertical;
+}
+
+.login-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.c-form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn-signup{
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    left: 0;
+}
+
+.c-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.btn-signup:hover {
+    background-color: #45a049;
+}
+
+.c-form select {
+    width: calc(100% - 18px);
+}
+
+/*Liste Joueur*/
+.player-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.filling-errors ul li{
+    color: rgb(243, 7, 7);
+}
+
+.player-card {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+}
+
+.player-card img {
+    height: 200px;
+    width: 200px;
+}
+
+.container-joueur img {
+    height: 200px;
+    width: 200px;
+}
+
+.player-card h2 {
+    margin-bottom: 10px;
+}
+
+
+
+.edit-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+.delete-button {
+    background-color: rgb(216, 23, 52);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+.edit-button:hover{
+    background-color: #45a049;
+    
+}
+.delete-button:hover {
+    background-color: rgb(146, 3, 5);
+}
+
+.add-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-button:hover {
+    background-color: #005F6B;
+}
+
+/*Equipes*/
+
+.team-list {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.team-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.team-school {
+    color: #777;
+}
